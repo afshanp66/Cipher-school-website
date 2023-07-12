@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="style.css">-->
+    <title>my first website</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+.navbar {
+    display: flex;
+}
+
+.nav-list {
+    width: 50%;
+    background-color: coral;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 2.3rem 2.4rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-list li a:hover {
+    text-decoration: none;
+    color: black;
+    transform: scale(1.1);
+    filter: brightness(1.3);
+    background-color: blue;
+    border-radius: .2rem;
+
+}
+.btn {
+    font-family: 'Courier New', Courier, monospace;
+    margin: .0rem .9rem;
+    background-color: black;
+    color: bisque;
+    padding: .4rem 1.4rem;
+    border: .2rem solid gray;
+    border-radius: 1.0rem;
+    font-size: 2.0rem;
+    cursor: pointer;
+    text-align: center;
+}
+.btn:hover{
+    background-color: blue;
+    color: black;
+    transform: scale(1.1);
+}
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    width: 40%;
+    border: .3rem solid;
+    border-radius: 50%;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    padding: .6rem .9rem;
+    text-align: center;
+    margin: .1rem;
+    border-radius: .8rem;
+    font-size: 1.2rem;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    margin: auto;
+    padding: .2rem .3rem;
+    background: url(imagefile/schoolimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.rightnav {
+    background-color: coral;
+    width: 50%;
+    text-align: right;
+}
+.container{
+    text-align: center;
+    margin-top: .4rem;
+    padding: 1.0rem;
+    
+    background: black;
+    width: 99%;
+    border-radius: 1.0rem;
+}
+.container:hover{
+    background-color: aqua;
+    color: black;
+    transform: scale(1.1);
+}
+.form-box{
+    text-align: center;
+    color: black;
+    font-size: .8rem;
+    font-family: 'Courier New', Courier, monospace;
+    background: url(imagefile/homepagepic.jpg);
+    padding: 4.0rem;
+}
+.rightbar{
+    background: red;
+    height: 60.0rem;
+    width: 20.0rem;
+    padding: .3rem;
+    display: grid;
+    
+}
+.rightbar img {
+    height: 9.0rem;
+    width: 20.0rem;
+    margin: .2rem;
+}
+.rightbar img:hover{
+    transition: 300ms;
+    transform: scale(1.03);
+    filter: brightness(1.1);
+
+}
+.leftbar{
+    background-color: blue;
+    width: 20.7rem;
+    height: 3.2rem;
+    font-size: 1.0rem;
+}
+.section{
+    background: url(imagefile/back3.jpg)
+     
+}
+.middle{
+    width: 70rem;
+    height: 30rem;
+    margin-left: 40rem;
+    margin-top: -31rem;
+    border: .4rem solid yellow;
+    border-radius: .4rem;
+    background-color: lightslategray;
+}
+.middle img{
+    position: absolute;
+    padding: 50px;
+    border-radius: 10px;
+}
+@media(max-width: 998px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width: 750px){
+    html{
+        font-size: 40%;
+    }
+}
+</style>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <div class="logo"><img src="imagefile/logo.jpg" alt="logo"></div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#course">Course</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="rightnav">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">search</button>
+        </div>
+    </nav>
+    <div class="form-box">
+        <h1>CIPHER SCHOOL</h1>
+        <p>We visualize a school where children are offered a combination of supportive environment, modern teaching methodology and nothing less than parental care. After establishing significant milestones in technical education in eastern India, our group is now focussing on a mission to set new standards in moulding future generation of India. Our deep rooted research in teaching methods, aids and practices backed up with state of he art curriculum, IEM Public School will endeavor to give a nw direction to future citizens. Children need the environment to learn through guidance and adopt to take over changing life and opportunities. The school if completely dedicated to young minds aiming to enrich themselves with knowledge, character and power. India will be looking upto today’s young generation on the path of becoming a super power in near future.
+
+            Under the umbrella of founding father Prof. Dr. Satyajit Chakrabarti, The Institute of Engineering And Management Group (IEM) was established. Settling in the heart of Salt Lake, IEM provides a beautiful and spacious green environment. Being a part of the IEM Group , IEM Public School provides a caring and friendly environment where every child is valued and nurtured. Each eye is encouraged to see themselves as part of the school community, where academics, technology, co-curricular activities, physical training combined with integrity and respect for other people are given attention to.</p>
+    </div>
+    <div class="rightbar">
+        <img src="imagefile/schoolaward.jpg" alt="">
+        <img src="imagefile/schoolculturalactivities.jpg" alt="">
+        <img src="imagefile/schoollibrary1.jpg" alt="">
+        <img src="imagefile/schoolcanteen.jpg" alt="">
+        <img src="imagefile/schoolgym.jpg" alt="">
+        <img src="imagefile/principal.jpg" alt="">
+    </div>
+    <div class="leftbar">
+        <h1>Our Principal</h1>
+    </div>
+    <aside class="middle">
+        <img src="imagefile/contact.jpg" alt="" width="600" height="200">
+        <img src="imagefile/pleasesmile.jpg" alt="" width="600" height="200">
+        <img src="imagefile/schoolaward.jpg" alt="" width="600" height="200">
+        <img src="imagefile/schoolculturalactivities.jpg" alt="" width="600" height="200">
+        <img src="imagefile/schoolgym.jpg" alt="" width="600" height="200">
+    </aside>
+    <div class="container">
+    <a href="signuppage.html">click here to sign up</a>
+    </div>
+<div class="section">
+    <a href="https://google.com" target="_blank">Go to google</a><br>
+    <a href="https://facebook.com" target="_blank">Go to facebook</a><br>
+    <a href="https://twitter.com" target="_blank">Go to twitter</a><br>
+    <a href="https://linkedin.com" target="_blank">Go to Linkedin</a><br>
+</div>
+    <footer>
+        <div class="center">Copyright &copy; www.cipherschool.com </div>
+    </footer>
+    <!--<script>
+        let deletePost = confirm("do you want open this page");
+        //console.log(deletePost);
+
+        if(deletePost){
+            console.log("your page is open succesfully");
+        }
+        else{
+            console.log("your page does not open while request user");
+        }
+    </script>-->
+</body>
+</html>

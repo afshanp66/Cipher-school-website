@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login and sign up</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+    <script src="https://kit.fontawesome.com/905d82ee1d.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: url(imagefile/city2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .form-box {
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        max-width: 400px;
+        top: 50%;
+        left: 50%;
+        background: blue;
+        padding: 60px 60px 80px;
+        transform: translate(-50%, -50%);
+        background: blue;
+        padding: 50px 50px 60px;
+        text-align: center;
+        border-radius: 2px;
+    }
+
+    .form-box h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        color: white;
+        position: relative;
+    }
+
+    .form-box h1::after {
+        content: "";
+        width: 50px;
+        height: 3px;
+        border-radius: 3px;
+        background: white;
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .input-field {
+        background: white;
+        margin: 7px;
+        align-items: center;
+        border-radius: 2px;
+        display: block;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    input {
+        width: 60%;
+        background: transparent;
+        border: 0;
+        outline: 0;
+        padding: 4px 5px;
+    }
+
+    .input-field i {
+        margin-right: 40px;
+        color: rgba(0, 0, 0, 0.335);
+    }
+
+    form p {
+        text-align: left;
+        font-size: 10px;
+        color: #fff;
+        margin: 4px;
+    }
+
+    form p a {
+        font-size: 12px;
+        color: rgb(0, 0, 0);
+    }
+
+    .btn-field {
+        text-align: center;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .btn-field button {
+        cursor: pointer;
+        color: black;
+        flex-basis: auto;
+        transition: background 1s;
+    }
+
+    .input-group {
+        height: 150px;
+    }
+
+    .btn-field button.disable {
+        background: gray;
+        color: black;
+    }
+</style>
+
+<body>
+    <div class="form-box" <h1 id="title">Sign up </h1>
+        <form>
+            <div class="input-group">
+                <div class="input-field" id="nameField">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Enter your name">
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="Email" placeholder="Enter your email">
+                </div>
+                <div class="input-field">
+                    <i class="fa-solid fa-key"></i>
+                    <input type="password" placeholder="Enter your password" </div>
+                </div>
+                <p>Lost password <a href="#">Click Here</a></p>
+            </div>
+            <div class="btn-field">
+                <button type="button" id="signupBtn">Sign up</button>
+                <button type="button" id="signinBtn" class="disable">Sign in</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        let signupBtn = document.getElementById("signupBtn");
+        let signinBtn = document.getElementById("signinBtn");
+        let nameField = document.getElementById("nameField");
+        let title = document.getElementById("title");
+
+        signinBtn.onclick = function () {
+            nameField.style.maxHeight = "0";
+            title.innerHTML = "Sign In";
+            signupBtn.classList.add("disable");
+            signinBtn.classList.remove("disable");
+        }
+        alert("do you want open new account");
+    </script>
+</body>
+
+</html>
